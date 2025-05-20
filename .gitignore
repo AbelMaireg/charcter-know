@@ -3,7 +3,9 @@
 
 # build
 __pycache__
+model/*.png
 
 # editors
 .vscode
 .idea
+.ipynb_checkpoints
