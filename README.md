@@ -17,3 +17,18 @@
 
   flask --app app.py --debug run
 ```
+
+# Test
+
+*input*:
+```bash
+  curl -X POST http://localhost:5000/predict -F "image=@./local-test-image/2.png"
+```
+
+*output*:
+```json
+{
+  "confidence": 0.9999767541885376,
+  "predicted_digit": 2
+}
+```
