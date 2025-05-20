@@ -5,7 +5,7 @@ from PIL import Image
 import io
 
 # Load the trained model
-model = tf.keras.models.load_model("./mnist_digit_model.keras")
+model = tf.keras.models.load_model("./model/mnist_digit_model.keras")
 
 
 def preprocess_image(file_stream):
