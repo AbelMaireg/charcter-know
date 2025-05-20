@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import tensorflow as tf
 import numpy as np
 from PIL import Image
@@ -18,6 +19,7 @@ def preprocess_image(file_stream):
 
 def create_app():
     app = Flask(__name__)
+    CORS(app)
 
     @app.route("/")
     def hello():
@@ -42,6 +44,7 @@ def create_app():
             predicted_digit = int(np.argmax(prediction[0]))
             confidence = float(prediction[0][predicted_digit])
 
+            print(f"Predicted digit: {predicted_digit}, Confidence: {confidence}")
             return jsonify(
                 {"predicted_digit": predicted_digit, "confidence": confidence}
             )
