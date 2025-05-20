@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 import tensorflow as tf
 import numpy as np
 from PIL import Image
-import io
 
 # Load the trained model
 model = tf.keras.models.load_model("./model/mnist_digit_model.keras")
