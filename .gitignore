@@ -1,6 +1,7 @@
 # model
 *.keras
-model/input
+model/input_mnist
+model/input_emnist
 
 # build
 __pycache__
