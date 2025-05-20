@@ -1,0 +1,9 @@
+# model
+*.keras
+
+# build
+__pycache__
+
+# editors
+.vscode
+.idea
