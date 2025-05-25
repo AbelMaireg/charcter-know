@@ -3,16 +3,12 @@
 
 ## Opening the Jupyter Notebook
 ```bash
-  cd model
-  docker compose -f tensorflow.compose.yml up
+  make notebook
 ```
 
 # Staring the Server
 
 ```bash
-  # cd to root directory
-  # cd ..  
-
   pip install -r requirements.txt
 
   flask --app app.py --debug run

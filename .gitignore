@@ -1,13 +1,13 @@
-# model
-*.keras
+# datasets
 model/input_mnist
 model/input_emnist
 
-# build
+# builds
 __pycache__
 model/*.png
+*.keras
 
 # editors
 .vscode
-.idea
+.pycharm
 .ipynb_checkpoints
