@@ -5,7 +5,6 @@ model/input_emnist
 # builds
 __pycache__
 model/*.png
-*.keras
 
 # editors
 .vscode
