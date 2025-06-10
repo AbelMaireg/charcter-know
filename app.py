@@ -109,11 +109,6 @@ def create_app():
             predicted_index = int(np.argmax(prediction[0]))
             confidence = float(prediction[0][predicted_index])
             predicted_character = maps[predicted_index]
-            if predicted_index < 10:
-                predicted_character = predicted_index
-            else:
-                if predicted_index < 37:
-                    predicted_character = chr(predicted_index + 55)
 
             print(f"Predicted index: {predicted_index}, Confidence: {confidence}")
             return jsonify(
